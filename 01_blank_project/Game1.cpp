@@ -32,7 +32,7 @@ public:
         // Colors::CornflowerBlue can also be used.
         graphics.GraphicsDevice()->Clear(Color::CornflowerBlue());
 
-        base::Update(gameTime);
+        base::Draw(gameTime);
     }
 
 private:
