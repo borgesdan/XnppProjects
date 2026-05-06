@@ -1,0 +1,22 @@
+{
+  "name": "xnpp",
+  "version": "0.5.1",
+  "description": "A port of Microsoft XNA in C++",
+  "homepage": "https://github.com/borgesdan/xnpp",
+  "license": "MIT",
+  "supports": "windows",
+  "dependencies": [    
+    "sdl3",
+    "libogg",
+    "libvorbis",
+    "bgfx",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}
