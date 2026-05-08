@@ -1,4 +1,9 @@
 {
-  "dependencies": [ "xnpp" ]
+  "dependencies": [
+    {
+      "name": "xnpp",
+      "features": [ "content-pipeline"]
+    }
+  ]    
 }
 

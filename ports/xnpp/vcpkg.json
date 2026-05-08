@@ -5,7 +5,7 @@
   "homepage": "https://github.com/borgesdan/xnpp",
   "license": "MIT",
   "supports": "windows",
-  "dependencies": [    
+  "dependencies": [
     "sdl3",
     "libogg",
     "libvorbis",
@@ -18,5 +18,17 @@
       "name": "vcpkg-cmake-config",
       "host": true
     }
-  ]
+  ],
+  "features": {
+    "content-pipeline": {
+      "description": "Build the XNPP Content Pipeline tool",
+      "dependencies": [
+        "nlohmann-json",
+        "stb",
+        "pugixml",
+        "freetype",
+        "ffmpeg"
+      ]
+    }
+  }
 }

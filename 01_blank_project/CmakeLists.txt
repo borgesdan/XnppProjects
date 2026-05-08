@@ -7,3 +7,4 @@ endif()
 # TODO: Add tests and install targets if needed.
 find_package(xnpp CONFIG REQUIRED)
 target_link_libraries(BlankProject PRIVATE xnpp::xnpp)
+
