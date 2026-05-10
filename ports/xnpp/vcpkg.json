@@ -1,6 +1,6 @@
 {
   "name": "xnpp",
-  "version": "0.5.1",
+  "version": "0.5.9",
   "description": "A port of Microsoft XNA in C++",
   "homepage": "https://github.com/borgesdan/xnpp",
   "license": "MIT",
