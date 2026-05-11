@@ -1,0 +1,14 @@
+{
+"ItemGroups": {      
+      "CompileItems": [
+        { "Include": "Sprites\\Player\\Idle.png", "Name": "Idle", "Importer": "TextureImporter", "Processor": "TextureProcessor" },        
+        { "Include": "Sounds\\ExitReached.wav", "Name": "ExitReached", "Importer": "WavImporter", "Processor": "SoundEffectProcessor" },
+        { "Include": "Sounds\\GemCollected.wma", "Name": "GemCollected", "Importer": "WmaImporter", "Processor": "SoundEffectProcessor" },
+        { "Include": "Sounds\\Music.ogg", "Name": "Music", "Importer": "OggImporter", "Processor": "SongProcessor" },
+		{ "Include": "Fonts\\Hud.spritefont", "Name": "Hud", "Importer": "FontDescriptionImporter", "Processor": "FontDescriptionProcessor" }
+      ],
+      "NoneItems": [
+        { "Include": "Levels\\0.txt", "Name": "0", "CopyToOutputDirectory": "PreserveNewest" }
+      ]
+    }
+}
