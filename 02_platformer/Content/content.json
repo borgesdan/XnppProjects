@@ -1,0 +1,299 @@
+{
+  "ItemGroups": {
+    "CompileItems": [
+      {
+        "Include": "Sprites\\Gem.png",
+        "Name": "Gem",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterA\\Idle.png",
+        "Name": "Idle",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterA\\Run.png",
+        "Name": "Run",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterB\\Idle.png",
+        "Name": "Idle",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterB\\Run.png",
+        "Name": "Run",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterC\\Idle.png",
+        "Name": "Idle",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterC\\Run.png",
+        "Name": "Run",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterD\\Idle.png",
+        "Name": "Idle",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\MonsterD\\Run.png",
+        "Name": "Run",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\Player\\Celebrate.png",
+        "Name": "Celebrate",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\Player\\Die.png",
+        "Name": "Die",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\Player\\Idle.png",
+        "Name": "Idle",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\Player\\Jump.png",
+        "Name": "Jump",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sprites\\Player\\Run.png",
+        "Name": "Run",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockA0.png",
+        "Name": "BlockA0",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockA1.png",
+        "Name": "BlockA1",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockA2.png",
+        "Name": "BlockA2",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockA3.png",
+        "Name": "BlockA3",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockA4.png",
+        "Name": "BlockA4",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockA5.png",
+        "Name": "BlockA5",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockA6.png",
+        "Name": "BlockA6",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockB0.png",
+        "Name": "BlockB0",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\BlockB1.png",
+        "Name": "BlockB1",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\Platform.png",
+        "Name": "Platform",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer0_0.png",
+        "Name": "Layer0_0",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer0_1.png",
+        "Name": "Layer0_1",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer0_2.png",
+        "Name": "Layer0_2",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer1_0.png",
+        "Name": "Layer1_0",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer1_1.png",
+        "Name": "Layer1_1",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer1_2.png",
+        "Name": "Layer1_2",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer2_0.png",
+        "Name": "Layer2_0",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer2_1.png",
+        "Name": "Layer2_1",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Backgrounds\\Layer2_2.png",
+        "Name": "Layer2_2",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Overlays\\you_died.png",
+        "Name": "you_died",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Overlays\\you_lose.png",
+        "Name": "you_lose",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Overlays\\you_win.png",
+        "Name": "you_win",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Tiles\\Exit.png",
+        "Name": "Exit",
+        "Importer": "TextureImporter",
+        "Processor": "TextureProcessor"
+      },
+      {
+        "Include": "Sounds\\ExitReached.wav",
+        "Name": "ExitReached",
+        "Importer": "WavImporter",
+        "Processor": "SoundEffectProcessor"
+      },
+      {
+        "Include": "Sounds\\GemCollected.wma",
+        "Name": "GemCollected",
+        "Importer": "WmaImporter",
+        "Processor": "SoundEffectProcessor"
+      },
+      {
+        "Include": "Sounds\\MonsterKilled.wma",
+        "Name": "MonsterKilled",
+        "Importer": "WmaImporter",
+        "Processor": "SoundEffectProcessor"
+      },
+      {
+        "Include": "Sounds\\Music.ogg",
+        "Name": "Music",
+        "Importer": "OggImporter",
+        "Processor": "SongProcessor"
+      },
+      {
+        "Include": "Sounds\\PlayerFall.wma",
+        "Name": "PlayerFall",
+        "Importer": "WmaImporter",
+        "Processor": "SoundEffectProcessor"
+      },
+      {
+        "Include": "Sounds\\PlayerJump.wma",
+        "Name": "PlayerJump",
+        "Importer": "WmaImporter",
+        "Processor": "SoundEffectProcessor"
+      },
+      {
+        "Include": "Sounds\\PlayerKilled.wma",
+        "Name": "PlayerKilled",
+        "Importer": "WmaImporter",
+        "Processor": "SoundEffectProcessor"
+      },
+      {
+        "Include": "Sounds\\Powerup.wma",
+        "Name": "Powerup",
+        "Importer": "WmaImporter",
+        "Processor": "SoundEffectProcessor"
+      },
+      {
+        "Include": "Fonts\\Hud.spritefont",
+        "Name": "Hud",
+        "Importer": "FontDescriptionImporter",
+        "Processor": "FontDescriptionProcessor"
+      }
+    ],
+    "NoneItems": [
+      {
+        "Include": "Levels\\0.txt",
+        "Name": "0",
+        "CopyToOutputDirectory": "PreserveNewest"
+      },
+      {
+        "Include": "Levels\\2.txt",
+        "Name": "2",
+        "CopyToOutputDirectory": "PreserveNewest"
+      },
+      {
+        "Include": "Levels\\1.txt",
+        "Name": "1",
+        "CopyToOutputDirectory": "PreserveNewest"
+      }
+    ]
+  }
+}

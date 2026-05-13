@@ -1,0 +1,74 @@
+add_executable (PlatformerGame  
+    "Game1.cpp" 
+    "AnimationPlayer.cpp"
+    "Level.cpp"
+    "Gem.cpp"
+    "Enemy.cpp"
+    "Player.cpp"
+)
+
+if (CMAKE_VERSION VERSION_GREATER 3.12)
+  set_property(TARGET PlatformerGame PROPERTY CXX_STANDARD 20)
+endif()
+
+# TODO: Add tests and install targets if needed.
+find_package(xnpp CONFIG REQUIRED)
+target_link_libraries(PlatformerGame PRIVATE xnpp::xnpp)
+
+#Content pipeline configuration
+set(CONTENT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Content")
+set(PIPELINE_CONFIG_FILE "${CONTENT_DIR}/content.json")
+set(SOURCE_CONTENT_DIR "${CONTENT_DIR}/bin/Windows")
+set(DEST_CONTENT_DIR "${CMAKE_CURRENT_BINARY_DIR}/Content")
+
+message(STATUS "CHECK ${CONTENT_DIR}")
+message(STATUS "CHECK ${PIPELINE_CONFIG_FILE}")
+message(STATUS "CHECK ${SOURCE_CONTENT_DIR}")
+message(STATUS "CHECK ${DEST_CONTENT_DIR}")
+
+if(EXISTS "${CONTENT_DIR}" AND EXISTS "${PIPELINE_CONFIG_FILE}")
+
+    message(STATUS "CHECK CONTENT PIPELINE CONFIGURATION")
+
+    # file(GLOB_RECURSE CONTENT_FILES "${CONTENT_DIR}/*.*")
+    set(CONTENT_FILES "${PIPELINE_CONFIG_FILE}")
+
+    find_program(
+        XNPP_CONTENT_CLI
+        NAMES xnpp-content-cli
+        REQUIRED
+    )
+
+    message(STATUS "CHECK ${XNPP_CONTENT_CLI}")
+
+    add_custom_command(
+        OUTPUT "${DEST_CONTENT_DIR}/.content_stamp"
+
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${DEST_CONTENT_DIR}"
+
+        COMMAND ${XNPP_CONTENT_CLI} "${PIPELINE_CONFIG_FILE}"
+
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${SOURCE_CONTENT_DIR}"
+            "${DEST_CONTENT_DIR}"
+
+        COMMAND ${CMAKE_COMMAND} -E touch
+            "${DEST_CONTENT_DIR}/.content_stamp"
+
+        DEPENDS ${CONTENT_FILES}
+
+        COMMENT "Building Content Pipeline..."
+        VERBATIM
+    )
+
+    add_custom_target(PlatformerBuildGameContent ALL
+        DEPENDS "${DEST_CONTENT_DIR}/.content_stamp"
+    )
+
+    add_dependencies(PlatformerGame PlatformerBuildGameContent)
+
+else()
+    message(STATUS "No Content folder/content.json found. Skipping content pipeline build.")
+endif()
+
+xnpp_deploy_shaders(PlatformerGame)

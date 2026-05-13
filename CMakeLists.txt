@@ -9,7 +9,12 @@ endif()
 project ("XnppProjects")
 
 option(BUILD_BLANK_PROJECT "Build blank project" ON)
+option(BUILD_PLATFORMER_PROJECT "Build platformer project" ON)
 
 if (BUILD_BLANK_PROJECT)
 	add_subdirectory("01_blank_project")
+endif()
+
+if (BUILD_PLATFORMER_PROJECT)
+	add_subdirectory("02_platformer")
 endif()
