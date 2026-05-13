@@ -9,3 +9,4 @@ find_package(xnpp CONFIG REQUIRED)
 target_link_libraries(BlankProject PRIVATE xnpp::xnpp)
 
 xnpp_deploy_shaders(BlankProject)
+xnpp_build_content(BlankProject)
