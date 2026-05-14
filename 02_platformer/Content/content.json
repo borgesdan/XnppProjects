@@ -50,7 +50,7 @@
         "Processor": "TextureProcessor"
       },
       {
-        "Include": "Sprites\\MonsterD\\Run.png",
+        "Include": "Sprites\\MonsterD\\Run.png", 
         "Name": "Run",
         "Importer": "TextureImporter",
         "Processor": "TextureProcessor"

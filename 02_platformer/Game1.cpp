@@ -58,7 +58,7 @@ namespace Platformer {
 
 			spriteBatch.Begin();
 			level->Draw(gameTime, spriteBatch);
-			//DrawHud();
+			DrawHud();
 
 			spriteBatch.End();
 
