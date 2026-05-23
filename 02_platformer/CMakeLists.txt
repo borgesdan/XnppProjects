@@ -15,5 +15,4 @@ endif()
 find_package(xnpp CONFIG REQUIRED)
 target_link_libraries(PlatformerGame PRIVATE xnpp::xnpp)
 
-xnpp_deploy_shaders(PlatformerGame)
 xnpp_build_content(PlatformerGame)
